@@ -59,3 +59,20 @@ class HoldConvertedError(DomainError):
     code = "HOLD_CONVERTED"
     status_code = 409
     message = "이미 예약으로 전환된 홀드입니다."
+
+class HoldExpiredError(DomainError):
+    code = "HOLD_EXPIRED"
+    status_code = 409
+    message = "만료된 홀드입니다."
+
+
+class HoldNotActiveError(DomainError):
+    code = "HOLD_NOT_ACTIVE"
+    status_code = 409
+    message = "취소된 홀드입니다."
+
+
+class ReservationNotFoundError(DomainError):
+    code = "RESERVATION_NOT_FOUND"
+    status_code = 404
+    message = "예약을 찾을 수 없습니다."
