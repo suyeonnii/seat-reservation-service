@@ -2,11 +2,13 @@ from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 
 from app.core.errors import DomainError
+from app.holds.router import router as holds_router
 from app.seats.router import router as seats_router
 
 app = FastAPI(title="seat-reservation-service")
 
 app.include_router(seats_router)
+app.include_router(holds_router)
 
 
 @app.exception_handler(DomainError)

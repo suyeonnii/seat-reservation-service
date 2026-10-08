@@ -9,7 +9,7 @@ from app.core.config import HOLD_TTL_MINUTES
 class Hold(Base):
     __tablename__ = "holds"
     __table_args__ = (
-        CheckConstraint("status IN ('ACTIVE','CANELLED','CONVERTED','EXPIRED')",
+        CheckConstraint("status IN ('ACTIVE','CANCELLED','CONVERTED','EXPIRED')",
                         name="ck_holds_status"),
         Index("ix_holds_user_event_status","user_id", "event_id","status"),
         Index("ix_holds_event_status","event_id","status"),
@@ -35,5 +35,5 @@ class HoldItem(Base):
     )
 
     hold_id:Mapped[str] =mapped_column(ForeignKey("holds.id"),primary_key=True)
-    seat_id:Mapped[str] =mapped_column(ForeignKey("seats.id"),primary_key=True)
+    seat_id:Mapped[int] =mapped_column(ForeignKey("seats.id"),primary_key=True)
     price_snapshot:Mapped[int] = mapped_column(nullable=False)
