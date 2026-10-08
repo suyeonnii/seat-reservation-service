@@ -1,9 +1,10 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from sqlalchemy import CheckConstraint, ForeignKey, Index
 from sqlalchemy.orm import Mapped, mapped_column
 
 from app.core.db import Base
+from app.core.config import HOLD_TTL_MINUTES
 
 class Hold(Base):
     __tablename__ = "holds"
@@ -20,6 +21,12 @@ class Hold(Base):
     event_id:Mapped[str] =mapped_column(ForeignKey("events.id"),nullable=False)
     status:Mapped[str] =mapped_column(nullable=False)
     created_at:Mapped[datetime] =mapped_column(nullable=False)
+
+    def is_active(self, now: datetime) -> bool:
+        if self.status != "ACTIVE":
+            return False
+        return now < self.created_at + timedelta(minutes=HOLD_TTL_MINUTES)
+
 
 class HoldItem(Base):
     __tablename__ = "hold_items"
