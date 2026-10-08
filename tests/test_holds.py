@@ -4,6 +4,7 @@ from uuid import uuid4
 from app.core.clock import now_utc
 from app.holds.models import Hold, HoldItem
 from app.seats.models import Seat
+from app.events.models import Event
 
 
 def _create_hold_directly(db_session, event_id: str, user_id: str, seat_no: str, created_at, status: str = "ACTIVE"):
@@ -199,3 +200,53 @@ def test_cancel_converted_hold_is_rejected(client, db_session, seeded):
 
     assert response.status_code == 409
     assert response.json()["code"] == "HOLD_CONVERTED"
+
+def test_create_hold_for_started_event_is_rejected(client, db_session, seeded):
+    """
+    이미 시작된 공연에 대해 홀드를 요청할 경우
+    """
+    event_id = seeded["event_id"]
+    event = db_session.get(Event, event_id)
+    event.starts_at = now_utc() - timedelta(minutes=1)
+    db_session.commit()
+
+    response = client.post(
+        f"/events/{event_id}/holds",
+        json={"seat_nos": ["A1"]},
+        headers={"X-User-Id": "U-001"},
+    )
+
+    assert response.status_code == 409
+    assert response.json()["code"] == "EVENT_STARTED"
+
+
+def test_create_hold_with_unknown_seat_no_returns_404(client, db_session, seeded):
+    """
+    공연에 존재하지 않은 좌석에 대해 홀드를 요청할 경우
+    """
+    event_id = seeded["event_id"]
+
+    response = client.post(
+        f"/events/{event_id}/holds",
+        json={"seat_nos": ["Z9"]},
+        headers={"X-User-Id": "U-001"},
+    )
+
+    assert response.status_code == 404
+    assert response.json()["code"] == "SEAT_NOT_FOUND"
+
+
+def test_create_hold_with_unknown_user_returns_404(client, db_session, seeded):
+    """
+    존재하지 않는 사용자가 홀드를 요청할 경우
+    """
+    event_id = seeded["event_id"]
+
+    response = client.post(
+        f"/events/{event_id}/holds",
+        json={"seat_nos": ["A1"]},
+        headers={"X-User-Id": "U-999"},
+    )
+
+    assert response.status_code == 404
+    assert response.json()["code"] == "USER_NOT_FOUND"
