@@ -1,0 +1,1186 @@
+{
+  "_note": "과제용 초기 데이터입니다. 테이블 구조는 자유롭게 설계하세요.",
+  "users": [
+    {
+      "user_id": "U-001",
+      "display_name": "테스트사용자1"
+    },
+    {
+      "user_id": "U-002",
+      "display_name": "테스트사용자2"
+    },
+    {
+      "user_id": "U-003",
+      "display_name": "테스트사용자3"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EV-001",
+      "title": "뮤지컬 <별빛 아래>",
+      "venue": "그랜드홀",
+      "starts_at": "2026-11-15T19:30:00+09:00",
+      "prices": {
+        "VIP": 150000,
+        "R": 110000,
+        "S": 80000
+      },
+      "seats": [
+        {
+          "seat_no": "A1",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A2",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A3",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A4",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A5",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A6",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A7",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A8",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A9",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A10",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "B1",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "B2",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "B3",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "B4",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "B5",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "B6",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "B7",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "B8",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "B9",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "B10",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "C1",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C2",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C3",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C4",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C5",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C6",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C7",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C8",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C9",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C10",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C11",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C12",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D1",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D2",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D3",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D4",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D5",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D6",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D7",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D8",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D9",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D10",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D11",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D12",
+          "grade": "R"
+        },
+        {
+          "seat_no": "E1",
+          "grade": "R"
+        },
+        {
+          "seat_no": "E2",
+          "grade": "R"
+        },
+        {
+          "seat_no": "E3",
+          "grade": "R"
+        },
+        {
+          "seat_no": "E4",
+          "grade": "R"
+        },
+        {
+          "seat_no": "E5",
+          "grade": "R"
+        },
+        {
+          "seat_no": "E6",
+          "grade": "R"
+        },
+        {
+          "seat_no": "E7",
+          "grade": "R"
+        },
+        {
+          "seat_no": "E8",
+          "grade": "R"
+        },
+        {
+          "seat_no": "E9",
+          "grade": "R"
+        },
+        {
+          "seat_no": "E10",
+          "grade": "R"
+        },
+        {
+          "seat_no": "E11",
+          "grade": "R"
+        },
+        {
+          "seat_no": "E12",
+          "grade": "R"
+        },
+        {
+          "seat_no": "F1",
+          "grade": "R"
+        },
+        {
+          "seat_no": "F2",
+          "grade": "R"
+        },
+        {
+          "seat_no": "F3",
+          "grade": "R"
+        },
+        {
+          "seat_no": "F4",
+          "grade": "R"
+        },
+        {
+          "seat_no": "F5",
+          "grade": "R"
+        },
+        {
+          "seat_no": "F6",
+          "grade": "R"
+        },
+        {
+          "seat_no": "F7",
+          "grade": "R"
+        },
+        {
+          "seat_no": "F8",
+          "grade": "R"
+        },
+        {
+          "seat_no": "F9",
+          "grade": "R"
+        },
+        {
+          "seat_no": "F10",
+          "grade": "R"
+        },
+        {
+          "seat_no": "F11",
+          "grade": "R"
+        },
+        {
+          "seat_no": "F12",
+          "grade": "R"
+        },
+        {
+          "seat_no": "G1",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G2",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G3",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G4",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G5",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G6",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G7",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G8",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G9",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G10",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G11",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G12",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G13",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G14",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G15",
+          "grade": "S"
+        },
+        {
+          "seat_no": "H1",
+          "grade": "S"
+        },
+        {
+          "seat_no": "H2",
+          "grade": "S"
+        },
+        {
+          "seat_no": "H3",
+          "grade": "S"
+        },
+        {
+          "seat_no": "H4",
+          "grade": "S"
+        },
+        {
+          "seat_no": "H5",
+          "grade": "S"
+        },
+        {
+          "seat_no": "H6",
+          "grade": "S"
+        },
+        {
+          "seat_no": "H7",
+          "grade": "S"
+        },
+        {
+          "seat_no": "H8",
+          "grade": "S"
+        },
+        {
+          "seat_no": "H9",
+          "grade": "S"
+        },
+        {
+          "seat_no": "H10",
+          "grade": "S"
+        },
+        {
+          "seat_no": "H11",
+          "grade": "S"
+        },
+        {
+          "seat_no": "H12",
+          "grade": "S"
+        },
+        {
+          "seat_no": "H13",
+          "grade": "S"
+        },
+        {
+          "seat_no": "H14",
+          "grade": "S"
+        },
+        {
+          "seat_no": "H15",
+          "grade": "S"
+        },
+        {
+          "seat_no": "I1",
+          "grade": "S"
+        },
+        {
+          "seat_no": "I2",
+          "grade": "S"
+        },
+        {
+          "seat_no": "I3",
+          "grade": "S"
+        },
+        {
+          "seat_no": "I4",
+          "grade": "S"
+        },
+        {
+          "seat_no": "I5",
+          "grade": "S"
+        },
+        {
+          "seat_no": "I6",
+          "grade": "S"
+        },
+        {
+          "seat_no": "I7",
+          "grade": "S"
+        },
+        {
+          "seat_no": "I8",
+          "grade": "S"
+        },
+        {
+          "seat_no": "I9",
+          "grade": "S"
+        },
+        {
+          "seat_no": "I10",
+          "grade": "S"
+        },
+        {
+          "seat_no": "I11",
+          "grade": "S"
+        },
+        {
+          "seat_no": "I12",
+          "grade": "S"
+        },
+        {
+          "seat_no": "I13",
+          "grade": "S"
+        },
+        {
+          "seat_no": "I14",
+          "grade": "S"
+        },
+        {
+          "seat_no": "I15",
+          "grade": "S"
+        },
+        {
+          "seat_no": "J1",
+          "grade": "S"
+        },
+        {
+          "seat_no": "J2",
+          "grade": "S"
+        },
+        {
+          "seat_no": "J3",
+          "grade": "S"
+        },
+        {
+          "seat_no": "J4",
+          "grade": "S"
+        },
+        {
+          "seat_no": "J5",
+          "grade": "S"
+        },
+        {
+          "seat_no": "J6",
+          "grade": "S"
+        },
+        {
+          "seat_no": "J7",
+          "grade": "S"
+        },
+        {
+          "seat_no": "J8",
+          "grade": "S"
+        },
+        {
+          "seat_no": "J9",
+          "grade": "S"
+        },
+        {
+          "seat_no": "J10",
+          "grade": "S"
+        },
+        {
+          "seat_no": "J11",
+          "grade": "S"
+        },
+        {
+          "seat_no": "J12",
+          "grade": "S"
+        },
+        {
+          "seat_no": "J13",
+          "grade": "S"
+        },
+        {
+          "seat_no": "J14",
+          "grade": "S"
+        },
+        {
+          "seat_no": "J15",
+          "grade": "S"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-002",
+      "title": "가을 정기연주회",
+      "venue": "챔버홀",
+      "starts_at": "2026-11-18T15:00:00+09:00",
+      "prices": {
+        "VIP": 90000,
+        "R": 70000,
+        "S": 50000
+      },
+      "seats": [
+        {
+          "seat_no": "A1",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A2",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A3",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A4",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A5",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A6",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A7",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A8",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A9",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A10",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A11",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A12",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "B1",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B2",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B3",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B4",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B5",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B6",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B7",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B8",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B9",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B10",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B11",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B12",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B13",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B14",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C1",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C2",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C3",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C4",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C5",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C6",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C7",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C8",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C9",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C10",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C11",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C12",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C13",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C14",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D1",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D2",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D3",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D4",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D5",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D6",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D7",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D8",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D9",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D10",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D11",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D12",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D13",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D14",
+          "grade": "R"
+        },
+        {
+          "seat_no": "E1",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E2",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E3",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E4",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E5",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E6",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E7",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E8",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E9",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E10",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E11",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E12",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E13",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E14",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E15",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E16",
+          "grade": "S"
+        },
+        {
+          "seat_no": "F1",
+          "grade": "S"
+        },
+        {
+          "seat_no": "F2",
+          "grade": "S"
+        },
+        {
+          "seat_no": "F3",
+          "grade": "S"
+        },
+        {
+          "seat_no": "F4",
+          "grade": "S"
+        },
+        {
+          "seat_no": "F5",
+          "grade": "S"
+        },
+        {
+          "seat_no": "F6",
+          "grade": "S"
+        },
+        {
+          "seat_no": "F7",
+          "grade": "S"
+        },
+        {
+          "seat_no": "F8",
+          "grade": "S"
+        },
+        {
+          "seat_no": "F9",
+          "grade": "S"
+        },
+        {
+          "seat_no": "F10",
+          "grade": "S"
+        },
+        {
+          "seat_no": "F11",
+          "grade": "S"
+        },
+        {
+          "seat_no": "F12",
+          "grade": "S"
+        },
+        {
+          "seat_no": "F13",
+          "grade": "S"
+        },
+        {
+          "seat_no": "F14",
+          "grade": "S"
+        },
+        {
+          "seat_no": "F15",
+          "grade": "S"
+        },
+        {
+          "seat_no": "F16",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G1",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G2",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G3",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G4",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G5",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G6",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G7",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G8",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G9",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G10",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G11",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G12",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G13",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G14",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G15",
+          "grade": "S"
+        },
+        {
+          "seat_no": "G16",
+          "grade": "S"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-003",
+      "title": "연극 <겨울 손님>",
+      "venue": "소극장",
+      "starts_at": "2026-11-20T20:00:00+09:00",
+      "prices": {
+        "VIP": 60000,
+        "R": 45000,
+        "S": 35000
+      },
+      "seats": [
+        {
+          "seat_no": "A1",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A2",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A3",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A4",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A5",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A6",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A7",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "A8",
+          "grade": "VIP"
+        },
+        {
+          "seat_no": "B1",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B2",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B3",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B4",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B5",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B6",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B7",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B8",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B9",
+          "grade": "R"
+        },
+        {
+          "seat_no": "B10",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C1",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C2",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C3",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C4",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C5",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C6",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C7",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C8",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C9",
+          "grade": "R"
+        },
+        {
+          "seat_no": "C10",
+          "grade": "R"
+        },
+        {
+          "seat_no": "D1",
+          "grade": "S"
+        },
+        {
+          "seat_no": "D2",
+          "grade": "S"
+        },
+        {
+          "seat_no": "D3",
+          "grade": "S"
+        },
+        {
+          "seat_no": "D4",
+          "grade": "S"
+        },
+        {
+          "seat_no": "D5",
+          "grade": "S"
+        },
+        {
+          "seat_no": "D6",
+          "grade": "S"
+        },
+        {
+          "seat_no": "D7",
+          "grade": "S"
+        },
+        {
+          "seat_no": "D8",
+          "grade": "S"
+        },
+        {
+          "seat_no": "D9",
+          "grade": "S"
+        },
+        {
+          "seat_no": "D10",
+          "grade": "S"
+        },
+        {
+          "seat_no": "D11",
+          "grade": "S"
+        },
+        {
+          "seat_no": "D12",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E1",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E2",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E3",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E4",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E5",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E6",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E7",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E8",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E9",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E10",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E11",
+          "grade": "S"
+        },
+        {
+          "seat_no": "E12",
+          "grade": "S"
+        }
+      ]
+    }
+  ]
+}

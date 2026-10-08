@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# 프로젝트 전용 추가
+.idea/
+*.db
+*.sqlite3
+.DS_Store
