@@ -3,6 +3,8 @@ from abc import ABC, abstractmethod
 from collections.abc import Iterator
 from contextlib import contextmanager
 
+import redis
+from app.core.config import REDIS_URL
 
 class Lock(ABC):
     """
@@ -57,4 +59,32 @@ class InMemoryLock(Lock):
             self._held_keys.discard(key)
 
 
-lock: Lock = InMemoryLock()
+class RedisLock(Lock):
+    """
+    Redis를 사용하는 분산 락
+    """
+
+    def __init__(self, redis_url: str) -> None:
+        self._client = redis.from_url(redis_url)
+
+    def acquire(self, key: str) -> bool:
+
+        return bool(self._client.set(key, "1", nx=True, ex=5))
+
+    def release(self, key: str) -> None:
+        self._client.delete(key)
+
+
+def _create_lock() -> Lock:
+
+    if REDIS_URL:
+        try:
+            candidate = RedisLock(REDIS_URL)
+            candidate._client.ping()
+            return candidate
+        except Exception:
+            pass
+    return InMemoryLock()
+
+
+lock: Lock = _create_lock()
