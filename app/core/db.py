@@ -14,6 +14,8 @@ class Base(DeclarativeBase):
 engine: Engine = create_engine(
     f"sqlite:///{DATABASE_PATH}",
     connect_args={"check_same_thread": False},
+    pool_size=50,
+    max_overflow=50,
 )
 
 

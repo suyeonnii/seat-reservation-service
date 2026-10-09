@@ -1,6 +1,7 @@
 from uuid import uuid4
 
 from sqlalchemy import update
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
 from app.core.clock import now_utc
@@ -84,9 +85,15 @@ def create_reservation(db: Session, user_id: str, body: ReservationCreate) -> tu
     seat_ids = [item.seat_id for item in hold_items]
     db.execute(update(Seat).where(Seat.id.in_(seat_ids)).values(status="RESERVED"))
 
-    db.commit()
-    db.refresh(new_reservation)
+    try:
+        db.commit()
+    except IntegrityError:
 
+        db.rollback()
+        existing = db.query(Reservation).filter(Reservation.hold_id == hold.id).first()
+        return _to_reservation_out(db, existing, message="이미 생성된 예약입니다."), False
+
+    db.refresh(new_reservation)
     return _to_reservation_out(db, new_reservation, message="예약이 생성되었습니다."), True
 
 
